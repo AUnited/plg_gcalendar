@@ -19,7 +19,7 @@ class plgContentyoutube extends JPlugin
 		{
 		global $mainframe;
 
-		if ( JString::strpos( $article->text, '{youtube}'))
+		if ( JString::strpos( $article->text, '{gcalendar}'))
 		{
             $article->text = preg_replace_callback('|{gcalendar}(.*){\/gcalendar}|',function ($match){return $this->Calendar($match[1]);}, $article->text);
         }
