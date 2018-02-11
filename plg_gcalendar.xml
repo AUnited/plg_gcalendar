@@ -14,8 +14,8 @@
 {gcalendar}122fgsytYjjjik544@group.calendar.google.com{/gcalendar}<br/>	]]>
 	</description>
 	<files>
-		<filename plugin="plg_gcalendar">gcalendar.php</filename>
-        <filename plugin="plg_gcalendar">gcalendar.xml</filename>
+		<filename plugin="plg_gcalendar">plg_gcalendar.php</filename>
+        <filename plugin="plg_gcalendar">plg_gcalendar.xml</filename>
 	</files>
 	<config>
 		<fields name="params">
