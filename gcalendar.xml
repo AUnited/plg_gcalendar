@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://help.aunited.ru/dtd/joomla/3.0/plugin-install.dtd">
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>Google Calendar</name>
+	<author>Vitaliy Zhukov</author>
+	<creationDate>Feb 2018</creationDate>
+	<copyright>Vitaliy Zhukov 2018. All rights reserved.</copyright>
+	<license>http://www.apache.org/licenses/ Apache 2.0 License</license>
+	<authorEmail>info@aunited.ru</authorEmail>
+	<authorUrl>http://aunited.ru/youtube</authorUrl>
+	<version>0.1</version>
+	<description>
+	<![CDATA[ <p>Using this plugin, you can embed Google Calendar into articles simply by copying and pasting a Calendar ID video parameter between the GCalendar flags: {gcalendar}xxxxxx{/gcalendar} Then you would insert the following text to your article:<br/>
+{youtube}2il882at1dto1s899g2odb4dac@group.calendar.google.com{/youtube}<br/>	]]>
+	</description>
+	<files>
+		<filename plugin="plg_gcalendar">gcalendar.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="width" type="text" default="800" label="Width" description="Width of Google Calendar. Default width is 800 pixels." />
+				<field name="height" type="text" default="600" label="Height" description="Height of Google Calendar. Default height is 600 pixels." />
+                <field name="scroll" type="radio" class="btn-group btn-group-yesno" default="0" label="Scrolling" description="Enable scrolling for iframe.">
+                    <option value="0">JNo</option>
+                    <option value="1">JYes</option>
+                </field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="youtube"><![CDATA[http://help.aunited.ru/plg_gcalendar/update/gcalendar-update.xml]]></server>
+	</updateservers>
+</extension>
