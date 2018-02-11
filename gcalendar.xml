@@ -15,6 +15,7 @@
 	</description>
 	<files>
 		<filename plugin="plg_gcalendar">gcalendar.php</filename>
+        <filename plugin="plg_gcalendar">gcalendar.xml</filename>
 	</files>
 	<config>
 		<fields name="params">
@@ -29,6 +30,6 @@
 		</fields>
 	</config>
 	<updateservers>
-		<server type="extension" priority="1" name="youtube"><![CDATA[http://help.aunited.ru/plg_gcalendar/update/gcalendar-update.xml]]></server>
+		<server type="extension" priority="1" name="gcalendar"><![CDATA[http://help.aunited.ru/plg_gcalendar/update/gcalendar-update.xml]]></server>
 	</updateservers>
 </extension>
