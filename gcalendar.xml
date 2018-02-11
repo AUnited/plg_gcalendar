@@ -11,7 +11,7 @@
 	<version>0.1</version>
 	<description>
 	<![CDATA[ <p>Using this plugin, you can embed Google Calendar into articles simply by copying and pasting a Calendar ID video parameter between the GCalendar flags: {gcalendar}xxxxxx{/gcalendar} Then you would insert the following text to your article:<br/>
-{youtube}2il882at1dto1s899g2odb4dac@group.calendar.google.com{/youtube}<br/>	]]>
+{gcalendar}122fgsytYjjjik544@group.calendar.google.com{/gcalendar}<br/>	]]>
 	</description>
 	<files>
 		<filename plugin="plg_gcalendar">gcalendar.php</filename>
